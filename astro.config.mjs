@@ -12,15 +12,22 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'ホーム',
+					items: [{ label: 'ホーム', slug: 'index' }],
+				},
+				{
+					label: 'Unix コマンド',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Unix コマンド入門', slug: 'unix-training' },
+						{ label: '基本的な Unix コマンド', slug: 'unix-training/basic' },
+						{ label: '応用的な Unix コマンド', slug: 'unix-training/advanced' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Git',
+					items: [
+						{ label: 'Git 入門', slug: 'git-training' },
+					],
 				},
 			],
 		}),
