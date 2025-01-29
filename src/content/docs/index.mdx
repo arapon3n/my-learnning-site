@@ -2,6 +2,7 @@
 title: "プログラミング学習サイト"
 description: "Unix コマンドと Git を学ぶための初心者向け学習サイト"
 ---
+import { Aside, Code, Steps } from '@astrojs/starlight/components';
 
 # 🌟 プログラミング学習サイトへようこそ！
 
@@ -41,3 +42,38 @@ description: "Unix コマンドと Git を学ぶための初心者向け学習�
 
 ## 💡 **さっそく始めよう！**
 🎯 **まずは [Unix コマンド入門](./unix/) から学習を始めましょう！**
+
+## 対象サービス
+[![My Skills](https://skillicons.dev/icons?i=ts,html,css,vscode,git,github,react,nodejs,express,docker,vite,mysql,firebase,aws)]()
+
+サンプルコード
+<Code code={`console.log('Hello, world!');`} lang="javascript" title={`sample.ts`} />
+
+export const exampleCode = `console.log('This could come from a file or CMS!');`;
+export const fileName = 'example.js';
+export const highlights = ['file', 'CMS'];
+
+<Code code={exampleCode} lang="js" title={fileName} mark={highlights} />
+
+<Steps>
+
+1. Import the component into your MDX file:
+
+   ```js
+   // hoge.js
+   import { Steps } from '@astrojs/starlight/components';
+   ```
+
+2. Wrap `<Steps>` around your ordered list items.
+
+</Steps>
+
+<Aside type="tip">
+
+Other content is also supported in asides.
+
+```js
+// A code snippet, for example.
+```
+
+</Aside>

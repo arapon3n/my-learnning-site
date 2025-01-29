@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Web Dev Roadmap',
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
@@ -14,6 +14,10 @@ export default defineConfig({
 				{
 					label: 'ホーム',
 					items: [{ label: 'ホーム', slug: 'index' }],
+				},
+				{
+					label: '環境構築',
+					items: [{ label: 'はじめに', slug: 'environment-building' }]
 				},
 				{
 					label: 'Unix コマンド',
@@ -32,4 +36,7 @@ export default defineConfig({
 			],
 		}),
 	],
+	vite: {
+    assetsInclude: ['**/*.png'] // PNG を Astro に認識させる
+  }
 });
